@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h2>Characters selected by location 'Citadel of Ricks'</h1>
+
+    {% for character in characters %}
+        {% include 'character.html.twig' %}
+    {% endfor %}
+{% endblock %}

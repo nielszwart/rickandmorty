@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h2>Characters selected by dimension 'Dimension C-137'</h2>
+
+    {% for character in characters %}
+        {% include 'character.html.twig' %}
+    {% endfor %}
+{% endblock %}
